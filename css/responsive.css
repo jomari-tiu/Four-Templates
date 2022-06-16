@@ -1,0 +1,222 @@
+/* desktop */
+@media screen and (max-width: 1920px) {	
+}
+@media screen and (max-width: 1599px) {	
+}
+@media screen and (max-width: 1432px) {
+    .banner.eco-head-2 .headline .sponsorBy{right: 32px;}
+}
+
+@media screen and (max-width: 1366px) {
+    .banner .sponsorBy img{width: 100px;}
+    .banner .sponsorBy p{font-size: 13px; margin-right: 5px;}
+    .banner .headline{max-width: 750px;}
+    .banner .sponsorBy{left: calc(50% + 390px);}
+    .body{max-width: 750px;}
+    .body2 {max-width: 950px;}
+    .references-container .container{max-width: 750px;}
+    .body .paragraph-quote.eco-2 .quote1{left: 105%;}
+    .body .paragraph-quote.eco-2 .quote1.left{right: 105%; left: unset;}
+
+}
+@media screen and (max-width: 1280px) {
+    .banner .sponsorBy{display: flex; flex-direction: column;}
+    .banner .sponsorBy.mobile{display: none;}
+
+    .body .paragraph-quote.eco-2 .quote1{width: 150px;}
+}
+/* End of Desktop */
+
+/* Ipad LandScape */
+@media screen and (max-width: 1080px){
+    .banner .sponsorBy{display: none;}
+    .banner .sponsorBy.mobile{display: flex; flex-direction: row; position: static; justify-content: flex-end;}
+    .banner .sponsorBy p{font-size: 14px; margin-right: 10px;}
+    .banner .sponsorBy img{width: 120px;}
+    .banner .headline{margin-top: -100px;}
+
+    h1{font-size: 40px;}
+    .banner .headline h1{margin-bottom: 25px;}
+
+    h2{font-size: 24px;}
+    .banner .headline h2{margin-bottom: 25px;}
+
+    .body .social-icons ul{position: static; display: flex; margin-bottom: 30px; margin-top: 30px;}
+    .body .social-icons ul li{margin-right: 15px;}
+
+    .body .paragraph-quote{padding-left: 200px;}
+
+    .body .paragraph-quote.right{padding-right: 200px;}
+
+    .body .paragraph-quote .quote1{left: 0;}
+
+    .body .paragraph-quote.right .quote1{right: 0;}
+
+    .body .percentage-container .rectagle-red .num{margin-left: -30px; width: 100%;}
+    .body .percentage-container .rectagle-red .ttext{margin-left: -30px; width: 100%;}
+
+    .body2 .two-img{width: 95%; margin: auto; margin-bottom: 50px;}
+
+    .banner.eco-head-2 .headline .sponsorBy{ margin-right: 32px;}
+
+    .banner.eco-head-2 .headline h1, .banner.eco-head-2 .headline h2{margin-bottom: 30px;}
+    .banner.eco-head-2 .headline{padding-bottom: 10px;}
+
+    .body .paragraph-quote.eco-2 .quote1{position: static; width: 100%; padding-right: 0; margin-bottom: 30px; padding-left: 15px; border-right: none; border-left: 3px solid red;}
+
+    .body .paragraph-quote.eco-2 .quote1.left{border-left: none; border-right: 3px solid #e3120b; padding-left: 0; padding-right: 15px;}
+
+    .body .paragraph-quote .quote1 span{line-height: 200%;}
+
+    .body .percentage-container.client .rectagle-red{width: 250px; margin-left: -50px;}
+
+    .body .paragraph-quote.eco-2.client .quote1.left{border-right: 3px solid #0768b1;}
+
+    .body .microsoft-container{width: 100%;}
+}
+
+
+@media only screen and (max-width: 810px) {
+    .body .percentage-container .rectagle-red{width: 180px;}
+
+    .body .percentage-container.eco-2 .rectagle-red{width: 200px;}
+
+    .img-full.eco-2 p{width: 85%;}
+
+    .img-full p{width: 85%;}
+
+    .body .percentage-container.client .rectagle-red{margin-left: 0; width: 200px;}
+
+    .body .microsoft-container .text a p{font-size: 18px; line-height: 24px;}
+
+    
+}
+
+/* Ipad Mini Portrait */
+@media only screen and (max-width: 768px) {
+    .body .paragraph-quote{width: 100%; margin: auto;}
+    .eco-head nav{position: relative;}
+    .eco-head nav .menu-list{transform: rotateX(90deg); transition: .5s ease; transform-origin: top; position: absolute; right: 0; top: 100%; z-index: 9999; box-shadow: 9px 11px 15px 0 rgb(195 194 194 / 57%); background-color: white; display: flex; flex-direction: column; width: 100%; padding: 20px;}
+    .eco-head nav .toggle-menu{transform: rotateX(0deg);}
+    .eco-head nav .menu-list li{margin-left: 0; margin-bottom: 20px;}
+    .eco-head nav .menu-list li:nth-last-child(1){margin-bottom: 0;}
+    .eco-head nav .button{display: block;}
+
+    .css-1pj0y2g-Masthead div .menu-list{transform: rotateX(90deg); transition: .5s ease; transform-origin: top; position: absolute; right: 0; top: 100%; z-index: 9999; box-shadow: 9px 11px 15px 0 rgb(195 194 194 / 57%); background-color: white; display: flex; flex-direction: column; width: 100%; padding: 20px;}
+    .css-1pj0y2g-Masthead div .menu-list li{margin-left: 0; margin-bottom: 20px;}
+    .css-1pj0y2g-Masthead div .menu-list li:nth-last-child(1){margin-bottom: 0;}
+
+    .css-1pj0y2g-Masthead div .button{display: block;}
+    .css-1pj0y2g-Masthead div .toggle-menu{transform: rotateX(0deg);}
+
+    .eco-head nav .menu{display: inline;}
+    
+}
+@media only screen and (max-width: 640px) {
+    .banner .headline{order: 1; margin-top: 0; padding: 20px 0; width: 85%; margin: auto;}
+    .banner .background-image{order: 2; margin-bottom: 50px;}
+    .banner .headline h1, .banner .headline h2{text-align: start;}
+    .banner .background-image .desktop-banner{display: none;}
+    .banner .background-image .mobile-banner{display: inline-block; width: 100%; height: auto; max-height: 500px;}
+    .banner .background-image{width: 100%;}
+    .img-full p{width: 85%;}
+    .body2{width: 100%;}
+    .body2 .two-img{width: 100%; flex-wrap: wrap;}
+    .body2 .two-img div{width: 100%;}
+    .body2 .two-img div:nth-child(1){margin-bottom: 50px;}
+    .body2 .two-img p{width: 85%; margin: auto;}
+    .body .quote{padding: 15px;}
+    .img-full img, .body2 .two-img img{max-height: 500px; width: 100%; object-fit: cover;}
+    .body .quote h3{text-align: start;}
+    .body .quote{align-items: flex-start;}
+    .banner .headline h2::after{left: 0; transform: translate(0%);}
+    .banner::after{width: 60%;}
+
+    .body .paragraph-quote .quote1{position: static; width: 100%; padding-right: 0; margin-bottom: 30px; padding-left: 15px; border-right: none; border-left: 3px solid red;}
+    .body .paragraph-quote.right{padding: 0;}
+    .body .paragraph-quote.right .quote1{position: static; width: 100%; padding-left: 0; margin-bottom: 30px; padding-right: 15px; border-right: none; text-align: right; border-left: 0; border-right: 3px solid red;}
+    
+    
+    .body .paragraph-quote{padding: 0; width: 100%; margin-bottom: 50px;}
+    .body .paragraph-quote .text-container{padding: 0;}
+    .body .percentage-container{flex-direction: column;}
+    .body .percentage-container .text-container{width: 100%; padding-left: 0;}
+    .body .percentage-container .percent-container {width: 100%; display: flex; margin-bottom: 80px; justify-content: flex-end;}
+    .body .percentage-container .rectagle-red{width: 80%;}
+    .body .percentage-container .rectagle-red .ttext{margin: 0; margin-bottom: -40px; margin-left: -28%; padding-bottom: 0;}
+    .body .percentage-container .rectagle-red .num{margin: 0; margin-bottom: 60px; margin-left: -28%;}
+    .body .percentage-container .rectagle-red{padding-bottom: 0;}
+
+    .body .percentage-container.eco-2 .rectagle-red{width: 100%; padding: 0; border: none;}
+
+    .body .percentage-container.eco-2 .rectagle-red .ttext{background-color: rgb(238, 238, 238); border: 2px solid rgb(238, 238, 238); color: black; margin-bottom: 0; padding: 20px;}
+
+    .body .percentage-container.eco-2 .rectagle-red .num{padding-bottom: 40px; margin: 0;}
+
+    .body .percentage-container.eco-2 .rectagle-red .num::after{width: 100px;}
+
+    .body .percentage-container.eco-2 .rectagle-red .num-container{height: 200px; display: flex; justify-content: center; align-items: center;}
+
+    .body .percentage-container.eco-2 .percent-container{margin-bottom: 20px;}
+
+    .body .percentage-container.client .rectagle-red{width: 100%;}
+
+    .body .microsoft-container{flex-wrap: wrap;}
+
+    .body .microsoft-container div{width: 100%;}
+
+    .body .microsoft-container .logo{border-right: none; border-bottom: 2px solid #fafafa;}
+
+    .body .percentage-container.client .percent-container{margin-bottom: 20px;}
+
+
+
+}
+@media(max-width: 600px) {
+    .mt.client{margin-top: 155px;}
+}
+
+
+@media only screen and (max-width: 480px) {	
+    .eco-head{padding: 0 29px;}
+
+    p{font-size: 16px; line-height: 24px;}
+
+    h1 {font-size: 24px; line-height: 32px;}
+
+    h2 {font-size: 18px; line-height: 24px;}
+
+    .quoteText { font-size: 20px; line-height: 24px; font-weight: bold;}
+
+    .author { font-size: 21px; line-height: 24px;}
+
+    .sideQuote { font-size: 20px; line-height: 26px; }
+
+    .captionImage {font-size: 14px; line-height: 16px;}
+
+    .percentageText {font-size: 64px; line-height: 24px;}
+
+    .percentageTextParagraph {font-size: 18px; line-height: 24px;}
+
+    .paraHeading { font-size: 17px; line-height: 24px; }
+
+    .paraSubHead{ font-size: 16px; line-height: 24px; }
+
+    .body .paragraph-quote .quote1 em{font-size: 20px; line-height: 24px;}
+
+    .body .special-letter {font-size: 40px; line-height: 40px;}
+    
+}
+
+
+/* Iphone 12 Pro */
+@media only screen and (max-width: 390px) {
+}
+
+/* Iphone 6/7/8 */
+@media only screen and (max-width: 375px) {
+}
+
+/* Iphone 5 */
+@media only screen and (max-width: 320px) {
+}
