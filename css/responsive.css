@@ -5,6 +5,7 @@
 }
 @media screen and (max-width: 1432px) {
     .banner.eco-head-2 .headline .sponsorBy{right: 32px;}
+    .template5-banner{height: 56.25vw;}
 }
 
 @media screen and (max-width: 1366px) {
@@ -89,7 +90,15 @@
 
     .body .microsoft-container .text a p{font-size: 18px; line-height: 24px;}
 
-    
+    .template5-banner{height: auto; background-image: none !important;}
+
+    .template5-banner aside{display: inline-block; margin-top: clamp(20px, 2vw, 40px);}
+
+    .template5-banner .text-container h1, .template5-banner .text-container h2{font-size: clamp(28px, 6vw, 38px);}
+
+    .template5-banner .text-container h5{font-size: clamp();}
+
+    .template5-banner .text-container{width: 80%;}
 }
 
 /* Ipad Mini Portrait */
@@ -172,12 +181,22 @@
 
 
 }
+
+@media(max-width: 610px){
+    .wid1-temp5, .wid2-temp5.pr{width: 100%; min-width: unset; padding: 0 4%;}
+}
+
 @media(max-width: 600px) {
     .mt.client{margin-top: 155px;}
+    .mt.temp5{margin-top: 146px;}
+    .side-cont{width: 100%; margin: 0; float: unset; clear: unset; margin-bottom: clamp(70px, 5vw, 100px); padding: 0 4%; display: flex;align-items: center; flex-direction: column;}
+    .side-cont img{width: 60%;}
 }
 
 
 @media only screen and (max-width: 480px) {	
+    .template5-banner aside{width: 100%;}
+
     .eco-head{padding: 0 29px;}
 
     p{font-size: 16px; line-height: 24px;}

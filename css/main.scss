@@ -104,6 +104,13 @@ $latoI: 'lato-italic';
 .zirkonBold {font-family: 'zirkon-bold';}
 .zirkonMedium {font-family: 'zirkon-medium';}
 
+@font-face {
+  font-family: 'courierNew';
+  src: url('fonts/Courier-New/courReg.ttf') format('truetype');
+}
+
+$courierNewRegular: 'courierNew';
+
 $robotoBL: 'roboto-black';
 $robotoB: 'roboto-bold';
 $robotoI: 'roboto-italic';
@@ -160,6 +167,9 @@ em{font-family: $cardoI; @extend .captionImage; }
 .latoR{font-family: $latoR;}
 .latoL{font-family: $latoL;}
 
+.main-container{width: 100%; overflow: hidden;}
+.main-container.temp5{background-color: #0cd3b4;}
+
 .eco-head{width: 100%; padding: 0 32px; height: 85px; background-color: white; z-index: 999; position: fixed; top: 0;
   nav{width: 100%; max-width: 1432px; display: flex; align-items: center; justify-content: space-between; 
       margin: auto; padding: 10px 0; border-bottom: 1px solid #a7a7a7;
@@ -213,6 +223,7 @@ em{font-family: $cardoI; @extend .captionImage; }
 
 .mt{margin-top: 85px;}
 .mt.client{margin-top: 163px;}
+.mt.temp5{margin-top: 163px;}
 .stick{ box-shadow: 0 0 15px 0 rgb(185, 185, 185);
   nav{border-bottom: none;}
 }
@@ -433,5 +444,56 @@ em{font-family: $cardoI; @extend .captionImage; }
     h5{font-family: $econM; letter-spacing: 1px; text-align: start;
       a{color: $redBorder; text-transform: unset;}
     }
+  }
+}
+
+
+.template5-banner{ padding: 50px 0; margin-bottom: clamp(70px, 5vw, 100px);
+  width: 100%; height: 900px; display: flex; justify-content: center; align-items: center; flex-direction: column;
+  position: relative; background-color: #0cd3b4 ;
+  background-repeat: no-repeat; background-position: center; background-size: 100%;
+  .text-container{text-align: center; width: 55%;
+    h1{ font-family: $courierNewRegular; font-weight: bold; font-size: clamp(32px, 4vw, 78px); color: #fffeff; line-height: 1.1; margin-bottom: 5px;}
+    h2{ font-family: $courierNewRegular;  font-weight: bold; font-size: clamp(32px, 4vw, 78px ); color: black; line-height: 1.1;}
+    h5{ font-family: $courierNewRegular; margin-top: clamp(50px, 5vw, 150px); font-size: clamp(16px, 2vw, 32px); color: #fefffb;}
+  }
+  aside{width: 90%; display: none;
+    img{width: 100%; height: auto;}
+  }
+}
+.wid1-temp5{margin: auto; width: 50%; min-width: 600px; padding: 0 4%; position: relative;
+  p, li, a{margin-bottom: clamp(70px, 5vw, 100px); font-family: $courierNewRegular; font-size: clamp(15px, 2vw, 20px);}
+  img{width: 100%; height: auto; margin-bottom: clamp(70px, 5vw, 100px);}
+
+  .side-cont{ float: right; clear: right; width: 25%; padding: 10px; box-sizing: border-box; margin-right: 0;
+    img{width: 100%; height: auto; margin-bottom: 10px;}
+    p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
+  }
+}
+.wid1-temp5.bold{
+  p{font-family: $courierNewRegular; font-weight: bold;}
+}
+
+.wid1-temp5.prHead{
+  h2{margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(28px, 4vw, 56px); line-height: 1.1; font-family: $courierNewRegular; text-align: center; color: white;}
+}
+
+.wid2-temp5.pr{width: 60%; min-width: 600px; padding: 0 2%; margin: auto;
+  h2{ 
+    margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(20px, 4vw, 48px);  line-height: 1.1;
+    text-align: center; font-family: $courierNewRegular; font-weight: bold;
+  }
+}
+
+.side-cont{ float: right; clear: right; width: 15%; min-width: 300px; margin-top: -50px; padding: 40px; box-sizing: border-box; margin-right: 6.5%;
+  img{width: 100%; height: auto; margin-bottom: 10px;}
+  p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
+}
+
+.footer-temp5{padding: clamp(50px, 6vw, 150px) 0; background-color: white;
+  article{margin: auto; width: 90%; max-width: 550px; display: flex; align-items: center; flex-direction: column;
+    h5{font-family: 'econSans-medium'; font-size: clamp(16px, 5vw, 32px); text-align: center;}
+    a{display: block; transition: .5s ease-in-out; padding: clamp(10px, 2vw, 15px) clamp(15px, 2vw, 30px); font-size: clamp(13px, 2vw, 24px); border-radius: 10px; font-family: 'econSans-medium'; background-color: black; color: white; text-decoration: none; margin-top: 20px;}
+    a:hover{background-color: white; color: black; box-shadow: 10px 10px 15px 0 black;}
   }
 }
