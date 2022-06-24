@@ -127,10 +127,10 @@
             </p>
         </section>
 
-        <aside class="side-cont" data-aos="fade-left">
+        <div class="side-cont" data-aos="fade-left">
             <img src="images/Template5_3.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur elit.</p>
-        </aside>
+        </div>
 
 
         <section class="wid1-temp5" data-aos="fade-right">
@@ -168,7 +168,7 @@
 
     <footer class="footer-temp5">
         <article>
-            <h5 data-aos="fade-right">lorem ipsum call to action, statement going to client's site</h5>
+            <h5 data-aos="fade-right">Lorem ipsum call to action, statement going to client's site</h5>
             <div data-aos="fade-up">
                 <a href="#" target="_blank">LEARN MORE</a>
             </div>
@@ -276,19 +276,27 @@
         var lastScrollTop = 0;
         
         $(window).scroll(function(){
+
             var yPos = $(this).scrollTop();
 
             if(yPos > $('.main-header').outerHeight() - 16) {
+
                 header.addClass('sticky');
+
                 $(".hamburger-menu.active").addClass("stickMenu");
+
             } 
 
             else {
+
                 header.removeClass('sticky');
+
                 $(".hamburger-menu.active").removeClass("stickMenu");
+
             }
 
             lastScrollTop = yPos;
+            
         });
       
     </script>

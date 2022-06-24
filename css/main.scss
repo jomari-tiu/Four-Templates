@@ -447,12 +447,11 @@ em{font-family: $cardoI; @extend .captionImage; }
   }
 }
 
-
 .template5-banner{ padding: 50px 0; margin-bottom: clamp(70px, 5vw, 100px);
   width: 100%; height: 900px; display: flex; justify-content: center; align-items: center; flex-direction: column;
   position: relative; background-color: #0cd3b4 ;
   background-repeat: no-repeat; background-position: center; background-size: 100%;
-  .text-container{text-align: center; width: 55%;
+  .text-container{text-align: center; width: 43%;
     h1{ font-family: $courierNewRegular; font-weight: bold; font-size: clamp(32px, 4vw, 78px); color: #fffeff; line-height: 1.1; margin-bottom: 5px;}
     h2{ font-family: $courierNewRegular;  font-weight: bold; font-size: clamp(32px, 4vw, 78px ); color: black; line-height: 1.1;}
     h5{ font-family: $courierNewRegular; margin-top: clamp(50px, 5vw, 150px); font-size: clamp(16px, 2vw, 32px); color: #fefffb;}
@@ -475,17 +474,17 @@ em{font-family: $cardoI; @extend .captionImage; }
 }
 
 .wid1-temp5.prHead{
-  h2{margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(28px, 4vw, 56px); line-height: 1.1; font-family: $courierNewRegular; text-align: center; color: white;}
+  h2{margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(28px, 2vw, 48px);  line-height: 1.1; font-family: $courierNewRegular; text-align: center; color: white;}
 }
 
 .wid2-temp5.pr{width: 60%; min-width: 600px; padding: 0 2%; margin: auto;
   h2{ 
-    margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(20px, 4vw, 48px);  line-height: 1.1;
+    margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(24px, 2vw, 48px);  line-height: 1.1;
     text-align: center; font-family: $courierNewRegular; font-weight: bold;
   }
 }
 
-.side-cont{ float: right; clear: right; width: 15%; min-width: 300px; margin-top: -50px; padding: 40px; box-sizing: border-box; margin-right: 6.5%;
+.side-cont{ float: right; clear: right; width: 15%; min-width: 250px; margin-top: -50px; padding: 40px; box-sizing: border-box; margin-right: 6.5%;
   img{width: 100%; height: auto; margin-bottom: 10px;}
   p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
 }

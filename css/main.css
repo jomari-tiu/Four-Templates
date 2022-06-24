@@ -1338,7 +1338,7 @@ em {
 
 .template5-banner .text-container {
   text-align: center;
-  width: 55%;
+  width: 43%;
 }
 
 .template5-banner .text-container h1 {
@@ -1424,7 +1424,7 @@ em {
 
 .wid1-temp5.prHead h2 {
   margin-bottom: clamp(70px, 5vw, 100px);
-  font-size: clamp(28px, 4vw, 56px);
+  font-size: clamp(28px, 2vw, 48px);
   line-height: 1.1;
   font-family: "courierNew";
   text-align: center;
@@ -1440,7 +1440,7 @@ em {
 
 .wid2-temp5.pr h2 {
   margin-bottom: clamp(70px, 5vw, 100px);
-  font-size: clamp(20px, 4vw, 48px);
+  font-size: clamp(24px, 2vw, 48px);
   line-height: 1.1;
   text-align: center;
   font-family: "courierNew";
@@ -1451,7 +1451,7 @@ em {
   float: right;
   clear: right;
   width: 15%;
-  min-width: 300px;
+  min-width: 250px;
   margin-top: -50px;
   padding: 40px;
   -webkit-box-sizing: border-box;
