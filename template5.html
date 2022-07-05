@@ -37,6 +37,7 @@
                           <li><a href="eco-1.html">Template 3</a></li>
                           <li><a href="client-2.html">Template 4</a></li>
                           <li><a href="template5.html">Template 5</a></li>
+                          <li><a href="template6.html">Template 6</a></li>
                         </ul>
                     </div>
                 </header>
@@ -300,6 +301,118 @@
         });
       
     </script>
+      <script>
+        AOS.init({
+          duration: 1200
+        });
+      </script>
+  
+      <script>
+        function toggleMenu () {
+          var menuList = document.querySelector('.menu-list');
+          var top = document.querySelector('.top');
+          var center = document.querySelector('.center');
+          var bottom = document.querySelector('.bottom');
+  
+          menuList.classList.toggle('toggle-menu');
+          top.classList.toggle('rotate-top');
+          center.classList.toggle('translate-center');
+          bottom.classList.toggle('rotate-bottom');
+        }
+      </script>
+  
+      <!-- eco js -->
+      
+      <script>
+          $('#btn-back-to-top').click(
+            function () {
+              $('html,body').animate({
+                scrollTop: 0
+              }, 1000)
+          });
+      
+          var header = $('.header-container');
+          //var leftbuttonnav = $('#responsive-menu-button');
+          //var leftmenucontainer = $('#responsive-menu-container');
+          var lastScrollTop = 0;
+          
+          function updatePageScrollProgressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            // document.getElementById("page-progress-bar").style.width = scrolled + "%";
+          }
+          
+          
+          $(window).scroll(function(){
+              var yPos = $(this).scrollTop();
+  
+              if(yPos > $('.main-header').outerHeight() - 16) {
+                  header.addClass('sticky');
+                  $(".hamburger-menu.active").addClass("stickMenu");
+              
+              } else {
+                  header.removeClass('sticky');
+                  $(".hamburger-menu.active").removeClass("stickMenu");
+              }
+              lastScrollTop = yPos;
+              updatePageScrollProgressBar();
+          });
+        
+      </script>
+      
+      <!-- for ga and open header info (sa footer ilalagay sa gitna)-->
+      <script>
+              /**
+      
+               * GA Events
+      
+               */
+              
+              $("#toggle-sponsored-text").on("click", function() {
+                $(".sponsored-content-text").slideToggle().toggleClass("advert-open");
+                console.log($('.sponsored-content-text').hasClass('advert-open'));
+                if ($('.sponsored-content-text').hasClass('advert-open')) {
+                  ga('send', 'event', 'Open-Content', 'Advertisement-Feature', 'open');
+                }
+                else {
+                  ga('send', 'event', 'Open-Content', 'Advertisement-Feature', 'close');
+                }
+              });
+              $('#close-sponsored-text').on('click', function() {
+                $('.sponsored-content-text').slideUp();
+                ga('send', 'event', 'Open-Content', 'Advertisement-Feature', 'close');
+              })
+              jQuery(function () {
+               jQuery.scrollDepth({
+                 eventHandler: function (data) {
+                   if (data.event == 'ScrollDistance' && data.eventLabel == '25%') {
+                     ga('send', 'event', 'scroll-depth', '25%', '<?php the_title(); ?>-scroll25');
+                   } else if (data.event == 'ScrollDistance' && data.eventLabel == '50%') {
+                     ga('send', 'event', 'scroll-depth', '50%', '<?php the_title(); ?>-scroll50');
+                   } else if (data.event == 'ScrollDistance' && data.eventLabel == '75%') {
+                     ga('send', 'event', 'scroll-depth', '75%', '<?php the_title(); ?>-scroll75');
+                   } else if (data.event == 'ScrollDistance' && data.eventLabel == '100%') {
+                     ga('send', 'event', 'scroll-depth', '100%', '<?php the_title(); ?>-scroll100');
+      
+                   }
+                 }
+               });
+              });
+      
+              var seconds = 0;
+              function incrementSeconds() {
+                seconds += 1;
+                if (seconds >= 15) {
+                  clearInterval(timer);
+                  ga('send', 'event', '15_seconds', 'Read', '<?php the_title(); ?>');
+                }
+      
+              }
+      
+              var timer = setInterval(incrementSeconds, 1000);
+      </script>
+  
 
 
     </body>

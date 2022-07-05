@@ -169,6 +169,7 @@ em{font-family: $cardoI; @extend .captionImage; }
 
 .main-container{width: 100%; overflow: hidden;}
 .main-container.temp5{background-color: #0cd3b4;}
+.main-container.temp6{background-color: white;}
 
 .eco-head{width: 100%; padding: 0 32px; height: 85px; background-color: white; z-index: 999; position: fixed; top: 0;
   nav{width: 100%; max-width: 1432px; display: flex; align-items: center; justify-content: space-between; 
@@ -469,12 +470,28 @@ em{font-family: $cardoI; @extend .captionImage; }
     p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
   }
 }
+.wid1-temp5.dlpdf{ display: flex; justify-content: center; align-items: center;
+  .dl-pdf{display: inline-block; transition: .3s ease-in; font-family: 'zirkon-bold' !important; border-radius: 50px; text-align: center; padding: 15px 30px; background-color: #e3120b; color: white; text-decoration: none; font-size: clamp(18px, 2vw, 24px);}
+  .dl-pdf:hover{background-color: white; color: #e3120b; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
+}
+
+.wid1-temp5.temp6{
+  p, li, a{font-family: $econL;}
+}
+
 .wid1-temp5.bold{
   p{font-family: $courierNewRegular; font-weight: bold;}
 }
 
+.wid1-temp5.temp6.bold{
+  p{font-family: $econB; font-weight: bold;}
+}
+
 .wid1-temp5.prHead{
   h2{margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(28px, 2vw, 48px);  line-height: 1.1; font-family: $courierNewRegular; text-align: center; color: white;}
+}
+.wid1-temp5.prHead.temp6{
+  h2{color: black; font-family: 'zirkon-black'; font-size: clamp(32px, 3vw, 54px);}
 }
 
 .wid2-temp5.pr{width: 60%; min-width: 600px; padding: 0 2%; margin: auto;
@@ -482,6 +499,9 @@ em{font-family: $cardoI; @extend .captionImage; }
     margin-bottom: clamp(70px, 5vw, 100px); font-size: clamp(24px, 2vw, 48px);  line-height: 1.1;
     text-align: center; font-family: $courierNewRegular; font-weight: bold;
   }
+}
+.wid2-temp5.pr.temp6{width: 45%;
+  h2{font-size: clamp(20px, 2vw, 44px); font-family: 'zirkon-bold';}
 }
 
 .side-cont{ float: right; clear: right; width: 15%; min-width: 250px; margin-top: -50px; padding: 40px; box-sizing: border-box; margin-right: 6.5%;
@@ -493,6 +513,33 @@ em{font-family: $cardoI; @extend .captionImage; }
   article{margin: auto; width: 90%; max-width: 550px; display: flex; align-items: center; flex-direction: column;
     h5{font-family: 'econSans-medium'; font-size: clamp(16px, 5vw, 32px); text-align: center;}
     a{display: block; transition: .5s ease-in-out; padding: clamp(10px, 2vw, 15px) clamp(15px, 2vw, 30px); font-size: clamp(13px, 2vw, 24px); border-radius: 10px; font-family: 'econSans-medium'; background-color: black; color: white; text-decoration: none; margin-top: 20px;}
-    a:hover{background-color: white; color: black; box-shadow: 10px 10px 15px 0 black;}
+    a:hover{background-color: white; color: black; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
   }
 }
+
+.temp-6-header{width: 100%; margin-bottom: clamp(70px, 5vw, 100px); display: flex; justify-content: center; align-items: center; flex-direction: column;
+  .top{width: 100%; display: flex;  position: relative; justify-content: center; align-items: center; height: 30vw; overflow: hidden;
+    .buildings{position: absolute;width: 100%; left: 0; top: 10%;}
+    .models{position: absolute; height: 100%; width: 100%; top: 0; left: 0;
+      background-position: center; background-repeat: no-repeat; background-size: 100%;
+    }
+    .text-container{z-index: 9; position: absolute; bottom: 20%; border: 5px solid #e3120b; padding: clamp(5px, 3vw, 50px); padding-bottom: 0;
+      h1{font-family: 'zirkon-black'; margin-bottom: clamp(-50px , -5vw, -20px); line-height: 1; font-size: clamp(18px, 3vw, 64px); text-align: center; padding: 10px 20px; background-color: white;}
+    }
+  }
+  .bottom{ display: flex; flex-wrap: wrap; width: 100%;
+    div:nth-child(1){width: 30%;}
+    div:nth-child(2){width: 40%; display: flex; justify-content: center; align-items: center; flex-direction: column;
+      h4{font-family: 'zirkon-bold'; color: #e3120b; font-size: clamp(16px, 2vw, 28px); margin-bottom: clamp(30px, 3vw, 70px);}
+      .dl-pdf{display: inline-block; transition: .3s ease-in; font-family: $econL !important; border-radius: 50px; text-align: center; padding: 15px 30px; background-color: #e3120b; color: white; text-decoration: none; font-size: clamp(14px, 2vw, 20px);}
+      .dl-pdf:hover{background-color: white; color: #e3120b; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
+    }
+    div:nth-child(3){width: 30%; display: flex; justify-content: flex-end; align-items: center; padding-right: 5vw;
+      p{font-size: clamp(12px, 1vw, 16px);}
+      img{height: clamp(30px, 4vw, 60px); width: auto;}
+      
+    }
+  }
+}
+
+.rellax{transition: .5s cubic-bezier(0.21, 0.83, 1, 1);}

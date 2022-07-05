@@ -119,6 +119,7 @@
     .css-1pj0y2g-Masthead div .toggle-menu{transform: rotateX(0deg);}
 
     .eco-head nav .menu{display: inline;}
+    .temp-6-header .bottom div:nth-child(2) .dl-pdf{padding: 10px 30px;}
     
 }
 @media only screen and (max-width: 640px) {
@@ -178,10 +179,15 @@
 
     .body .percentage-container.client .percent-container{margin-bottom: 20px;}
 
+    .temp-6-header .bottom div:nth-child(3){width: 100%; margin-top: 20px;}
+    .temp-6-header .bottom div:nth-child(2){width: 100%;}
+    .temp-6-header .bottom div:nth-child(1){width: 100%;}
+    .temp-6-header .top{height: 40vw;}
 }
 
 @media(max-width: 610px){
     .wid1-temp5, .wid2-temp5.pr{width: 100%; min-width: unset; padding: 0 4%;}
+    .wid2-temp5.pr.temp6{width: 95%;}
 }
 
 @media(max-width: 600px) {
@@ -222,6 +228,8 @@
     .body .paragraph-quote .quote1 em{font-size: 20px; line-height: 24px;}
 
     .body .special-letter {font-size: 40px; line-height: 40px;}
+
+    .temp-6-header .top{height: 60vw;}
     
 }
 
