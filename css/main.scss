@@ -465,10 +465,7 @@ em{font-family: $cardoI; @extend .captionImage; }
   p, li, a{margin-bottom: clamp(70px, 5vw, 100px); font-family: $courierNewRegular; font-size: clamp(15px, 2vw, 20px);}
   img{width: 100%; height: auto; margin-bottom: clamp(70px, 5vw, 100px);}
 
-  .side-cont{ float: right; clear: right; width: 25%; padding: 10px; box-sizing: border-box; margin-right: 0;
-    img{width: 100%; height: auto; margin-bottom: 10px;}
-    p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
-  }
+
 }
 .wid1-temp5.dlpdf{ display: flex; justify-content: center; align-items: center;
   .dl-pdf{display: inline-block; transition: .3s ease-in; font-family: 'zirkon-bold' !important; border-radius: 50px; text-align: center; padding: 15px 30px; background-color: #e3120b; color: white; text-decoration: none; font-size: clamp(18px, 2vw, 24px);}
@@ -506,7 +503,10 @@ em{font-family: $cardoI; @extend .captionImage; }
 
 .side-cont{ float: right; clear: right; width: 15%; min-width: 250px; margin-top: -50px; padding: 40px; box-sizing: border-box; margin-right: 6.5%;
   img{width: 100%; height: auto; margin-bottom: 10px;}
-  p{margin-bottom: 0; font-size: 16px; line-height: 1.05;}
+  p{margin-bottom: 0; font-size: 14px; line-height: 1.05; font-family: "courierNew";}
+}
+.side-cont.temp6{
+  p{font-family: $econL;}
 }
 
 .footer-temp5{padding: clamp(50px, 6vw, 150px) 0; background-color: white;

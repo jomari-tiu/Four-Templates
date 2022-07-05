@@ -1399,28 +1399,6 @@ em {
   margin-bottom: clamp(70px, 5vw, 100px);
 }
 
-.wid1-temp5 .side-cont {
-  float: right;
-  clear: right;
-  width: 25%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-right: 0;
-}
-
-.wid1-temp5 .side-cont img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.wid1-temp5 .side-cont p {
-  margin-bottom: 0;
-  font-size: 16px;
-  line-height: 1.05;
-}
-
 .wid1-temp5.dlpdf {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1528,8 +1506,13 @@ em {
 
 .side-cont p {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.05;
+  font-family: "courierNew";
+}
+
+.side-cont.temp6 p {
+  font-family: "econSans-light";
 }
 
 .footer-temp5 {
