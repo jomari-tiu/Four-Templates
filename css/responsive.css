@@ -19,6 +19,8 @@
     .body .paragraph-quote.eco-2 .quote1{left: 105%;}
     .body .paragraph-quote.eco-2 .quote1.left{right: 105%; left: unset;}
 
+    .temp-6-header .bottom div:nth-child(2) .dl-pdf{padding: 15px 50px;}
+
 }
 @media screen and (max-width: 1280px) {
     .banner .sponsorBy{display: flex; flex-direction: column;}
@@ -199,6 +201,10 @@
 
 
 @media only screen and (max-width: 480px) {	
+    .temp-6-header .bottom div:nth-child(2) .dl-pdf{padding: 10px 20px; font-size: 14px;}
+
+
+
     .template5-banner aside{width: 100%;}
 
     .eco-head{padding: 0 29px;}

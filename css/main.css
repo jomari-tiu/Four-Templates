@@ -1412,24 +1412,20 @@ em {
 }
 
 .wid1-temp5.dlpdf .dl-pdf {
-  display: inline-block;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
-  font-family: 'zirkon-bold' !important;
-  border-radius: 50px;
-  text-align: center;
-  padding: 15px 30px;
-  background-color: #e3120b;
+  font-size: 15px;
+  font-family: "econSans-medium";
   color: white;
   text-decoration: none;
-  font-size: clamp(18px, 2vw, 24px);
+  padding: 10px 30px;
+  background-color: #e3110a;
+  border-radius: 30px;
+  padding-top: 14px;
 }
 
 .wid1-temp5.dlpdf .dl-pdf:hover {
-  background-color: white;
-  color: #e3120b;
-  -webkit-box-shadow: 10px 10px 10px -5px #a7a7a7;
-          box-shadow: 10px 10px 10px -5px #a7a7a7;
+  background-color: #cac9c9;
+  color: white;
+  text-decoration: underline;
 }
 
 .wid1-temp5.temp6 p, .wid1-temp5.temp6 li, .wid1-temp5.temp6 a {
@@ -1563,6 +1559,10 @@ em {
           box-shadow: 10px 10px 10px -5px #a7a7a7;
 }
 
+.footer-temp5.temp6 {
+  background-color: #f5f5f5;
+}
+
 .temp-6-header {
   width: 100%;
   margin-bottom: clamp(70px, 5vw, 100px);
@@ -1619,9 +1619,30 @@ em {
   z-index: 9;
   position: absolute;
   bottom: 20%;
-  border: 5px solid #e3120b;
   padding: clamp(5px, 3vw, 50px);
   padding-bottom: 0;
+  border: clamp(2px, 1vw, 5px) solid #e3110a;
+  border-bottom: 0;
+}
+
+.temp-6-header .top .text-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: clamp(2px, 1vw, 5px);
+  background-color: #e3110a;
+  width: 8%;
+}
+
+.temp-6-header .top .text-container::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: clamp(2px, 1vw, 5px);
+  background-color: #e3110a;
+  width: 8%;
 }
 
 .temp-6-header .top .text-container h1 {
@@ -1631,7 +1652,6 @@ em {
   font-size: clamp(18px, 3vw, 64px);
   text-align: center;
   padding: 10px 20px;
-  background-color: white;
 }
 
 .temp-6-header .bottom {
@@ -1672,24 +1692,19 @@ em {
 }
 
 .temp-6-header .bottom div:nth-child(2) .dl-pdf {
-  display: inline-block;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
-  font-family: "econSans-light" !important;
-  border-radius: 50px;
-  text-align: center;
-  padding: 15px 30px;
-  background-color: #e3120b;
-  color: white;
   text-decoration: none;
-  font-size: clamp(14px, 2vw, 20px);
+  padding: 20px 50px;
+  background-color: #e3110a;
+  color: white;
+  font-family: "econSans-medium" !important;
+  font-size: 20px;
+  border-radius: 50px;
 }
 
 .temp-6-header .bottom div:nth-child(2) .dl-pdf:hover {
-  background-color: white;
-  color: #e3120b;
-  -webkit-box-shadow: 10px 10px 10px -5px #a7a7a7;
-          box-shadow: 10px 10px 10px -5px #a7a7a7;
+  background-color: #cac9c9;
+  color: white;
+  text-decoration: underline;
 }
 
 .temp-6-header .bottom div:nth-child(3) {

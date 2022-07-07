@@ -468,8 +468,17 @@ em{font-family: $cardoI; @extend .captionImage; }
 
 }
 .wid1-temp5.dlpdf{ display: flex; justify-content: center; align-items: center;
-  .dl-pdf{display: inline-block; transition: .3s ease-in; font-family: 'zirkon-bold' !important; border-radius: 50px; text-align: center; padding: 15px 30px; background-color: #e3120b; color: white; text-decoration: none; font-size: clamp(18px, 2vw, 24px);}
-  .dl-pdf:hover{background-color: white; color: #e3120b; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
+  .dl-pdf{
+    font-size: 15px;
+    font-family: $econM;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #e3110a;
+    border-radius: 30px;
+    padding-top: 14px;
+  }
+  .dl-pdf:hover{background-color: rgb(202, 201, 201); color: white; text-decoration: underline;}
 }
 
 .wid1-temp5.temp6{
@@ -516,23 +525,30 @@ em{font-family: $cardoI; @extend .captionImage; }
     a:hover{background-color: white; color: black; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
   }
 }
-
+.footer-temp5.temp6{
+  background-color: #f5f5f5;
+}
 .temp-6-header{width: 100%; margin-bottom: clamp(70px, 5vw, 100px); display: flex; justify-content: center; align-items: center; flex-direction: column;
   .top{width: 100%; display: flex;  position: relative; justify-content: center; align-items: center; height: 30vw; overflow: hidden;
     .buildings{position: absolute;width: 100%; left: 0; top: 10%;}
     .models{position: absolute; height: 100%; width: 100%; top: 0; left: 0;
       background-position: center; background-repeat: no-repeat; background-size: 100%;
     }
-    .text-container{z-index: 9; position: absolute; bottom: 20%; border: 5px solid #e3120b; padding: clamp(5px, 3vw, 50px); padding-bottom: 0;
-      h1{font-family: 'zirkon-black'; margin-bottom: clamp(-50px , -5vw, -20px); line-height: 1; font-size: clamp(18px, 3vw, 64px); text-align: center; padding: 10px 20px; background-color: white;}
+    .text-container{z-index: 9; position: absolute; bottom: 20%;  padding: clamp(5px, 3vw, 50px); padding-bottom: 0;
+      border: clamp(2px, 1vw, 5px) solid #e3110a; border-bottom: 0;
+      &::after{content: ''; position: absolute; left: 0; bottom: 0; height: clamp(2px, 1vw, 5px); background-color: #e3110a; width: 8%;}
+      &::before{content: ''; position: absolute; right: 0; bottom: 0; height: clamp(2px, 1vw, 5px); background-color: #e3110a; width: 8%;}
+      h1{font-family: 'zirkon-black'; margin-bottom: clamp(-50px , -5vw, -20px); line-height: 1; font-size: clamp(18px, 3vw, 64px); text-align: center; padding: 10px 20px;}
     }
   }
   .bottom{ display: flex; flex-wrap: wrap; width: 100%;
     div:nth-child(1){width: 30%;}
     div:nth-child(2){width: 40%; display: flex; justify-content: center; align-items: center; flex-direction: column;
       h4{font-family: 'zirkon-bold'; color: #e3120b; font-size: clamp(16px, 2vw, 28px); margin-bottom: clamp(30px, 3vw, 70px);}
-      .dl-pdf{display: inline-block; transition: .3s ease-in; font-family: $econL !important; border-radius: 50px; text-align: center; padding: 15px 30px; background-color: #e3120b; color: white; text-decoration: none; font-size: clamp(14px, 2vw, 20px);}
-      .dl-pdf:hover{background-color: white; color: #e3120b; box-shadow: 10px 10px 10px -5px rgb(167, 167, 167);}
+      .dl-pdf{
+        text-decoration: none; padding: 20px 50px; background-color: #e3110a; color: white; font-family: $econM !important; font-size: 20px; border-radius: 50px;
+      }
+      .dl-pdf:hover{background-color: rgb(202, 201, 201); color: white; text-decoration: underline;}
     }
     div:nth-child(3){width: 30%; display: flex; justify-content: flex-end; align-items: center; padding-right: 5vw;
       p{font-size: clamp(12px, 1vw, 16px);}
